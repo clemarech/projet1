@@ -1,3 +1,6 @@
+/** ********************* Header **************** **/
+
+
 .banner {
   display : grid;
   grid-template-columns: 1fr;
@@ -19,6 +22,56 @@ h1 {
   font-size: 7vw;
 }
 
+/** ********************* SideMenu **************** **/
+
+
+/** ********************* Newsfeed **************** **/
+
+.container-newsfeed {
+  margin: 35px 0;
+}
+
+.container-newsfeed img {
+  width: 100%;
+}
+
+.feedImg {
+  position: relative;
+}
+
+.feedImg h3 {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+
+.feedImg p {
+  position: absolute;
+  top:31px;
+  left: 24px;
+  font-size: 1.7vw;
+}
+
+#news1 ul li{
+  list-style: none;
+}
+.review {
+  text-align: justify;
+}
+
+.italic {
+  font-style: italic; 
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/** ********************* Modulo About Me **************** **/
+
+/** ********************* Modulo Contact Me **************** **/
+
+/** ********************* Footer **************** **/
 footer {
   padding: 10px 0;
   background-color: #eee;
