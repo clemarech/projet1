@@ -1,23 +1,51 @@
-.banner
-{
+.banner {
   display : grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 }
 
-.banner img
-{
+.banner img {
   width: 100%;
   height: auto;
   grid-column-start: 1;
   grid-row-start: 1;
 }
 
-h1
-{
+h1 {
   grid-column-start: 1;
   grid-row-start: 1;
   justify-self: center;
   align-self: center;
   font-size: 7vw;
+}
+
+footer {
+  padding: 10px 0;
+  background-color: #eee;
+}
+
+.footerLogo {
+  display: none;
+}
+
+.social {
+  text-align: center;
+}
+
+.copyrights {
+  font-size: 2vw;
+  padding: 10px 0 0;
+  margin-bottom: 0;
+}
+
+@media (min-width: 576px) {
+
+  .footerLogo {
+    display: block;
+  }
+  .social {
+    text-align: right;
+  }
+
+
 }
