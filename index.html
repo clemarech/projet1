@@ -7,147 +7,215 @@
 		<title>Les Bons Plans du Panier</title>
 
 		<!-- ************** Link CSS Bootstrap ************** -->
-
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-
 		<!-- ************** Link CSS ************** -->
-
 		<link rel="stylesheet" href="assets/css/style.css">
 
 		<!--************** Add icon library ****************-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	</head>
 	<body>
-	<header>
+	<!-- **************************************** Header ********************************************-->
+		<header>
 
-		<!-- ************ Nav bar ************** -->
-		<nav class="navbar navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="#">
-	<img src="https://via.placeholder.com/40x40" alt="logo"></a>
+			<!-- ************ Nav bar ************** -->
+			<nav class="navbar navbar-expand-lg navbar-light">
+	  			<a class="navbar-brand" href="#">
+					<img src="assets/pictures/logo.png" alt="logo">
+				</a>
+		 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    		<span class="navbar-toggler-icon"></span>
+		  		</button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Qui suis-je ?</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link" href="#">
-          Me contacter
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!-- ************ banner ************** -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav ml-auto">
+					    <li class="nav-item active">
+					    	<a class="nav-link" href="#">Accueil<span class="sr-only"></span></a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link" href="#" data-toggle="modal" data-target="#modalAboutme">Qui suis-je ?</a>
+					    </li>
+					    <li class="nav-item dropdown">
+					        <a class="nav-link" href="#" data-toggle="modal" data-target="#ContactModal"> Me contacter</a>
+					    </li>
+				    </ul>
+				</div>
+			</nav>
 
-<div class="banner">
-	<img src="https://via.placeholder.com/1920x800" alt="banner">
-	<h1> Les Bons Plans du Panier</h1>
-	</header>
+			<!-- ************ banner ************** -->
 
-<!-- **************** SideMenu ************* -->
+			<div class="banner">
+				<img src="https://via.placeholder.com/1920x800" alt="banner">
+				<h1> Les Bons Plans du Panier</h1>
+			</div>
+
+		</header>
+
+		<!-- ***************************************** SideMenu ********************************************** -->
+
+		<div class="sideMenu">
+			<ul> 
+				<li><a class="fa fa-cutlery" href="#Bouffe"></a></li>
+				<li><a class="fa fa-paint-brush" href="#Art"></a></li>
+				<li><a class="fa fa-male" href="#Escaliers"></a></li>
+			</ul>
+		</div>
 
 
 
 
+		<!-- *************************************** Newsfeed ********************************************* -->
 
+		<!-- ****************** News1 ****************  -->
 
-
-
-<!-- ****************** Newsfeed *************** -->
-
-<div class="container-fluid container-newsfeed">
-	<div class="row" id="feed1">
-		<div class="row">
-			<div class="col-md-10 offset-md-1 col-8 offset-2 feedImg">
-				<img src="https://via.placeholder.com/1920x500" alt="">
-				<h3>Titre de l'article</h3>
-				<p><span class="italic">créé le 12/09/2018</span></p>
+		<div class="container-fluid container-newsfeed">
+			<div class="row" id="feed1">
+				<div class="row">
+					<div class="col-md-10 offset-md-1 col-8 offset-2 feedImg">
+						<img src="https://via.placeholder.com/1920x500" alt="">
+						<h3>Titre de l'article</h3>
+						<p><span class="italic">créé le 12/09/2018</span></p>
+					</div>
+				</div>
+				<div class="row newsText" >
+					<div class="col-md-3 offset-md-1 col-8 offset-2 infos">
+						<ul>
+							<li><span class="bold">Adresse : </span><a href="#">12 rue du Panier </a></li>
+							<li><span class="bold">Prix Moyen : </span>7€</li>
+							<li><span class="bold">Categorie : </span> Bouffe</li>
+						</ul>
+					</div>
+					<div class="col-md-7 offset-md-0 col-8 offset-2 review">
+						<p>Capicola pig chuck hamburger pastrami. Kevin strip steak pork loin filet mignon sausage short ribs ham burgdoggen doner tenderloin capicola tri-tip. Ham hock prosciutto shank bacon.</p>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row" id="news1">
-			<div class="col-md-5 offset-md-1 col-8 offset-2 ">
-				<h3>Titre de l'article</h3>
-				<ul>
-					<li><span class="bold">Adresse : </span><a href="#">12 rue du Panier </a></li>
-					<li><span class="bold">Prix Moyen : </span>7€</li>
-					<li><span class="bold">Categorie : </span> Bouffe</li>
-				</ul>
-			</div>
-			<div class="col-md-5 offset-md-0 col-8 offset-2 review">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt commodi omnis eos ut, porro rerum sequi ea fugiat non enim, iure, velit explicabo laboriosam voluptatem. Quae amet, veniam incidunt blanditiis!</p>
-			</div>
-		</div>
-		
 
+		<!-- ****************** News2 ****************  -->
 
-
-	</div>
-	
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ************ Footer ************** -->
-	<footer class="container-fluid">
-		<div class="row">
-			<div class="col-12 col-sm-6 footerLogo">
-				<img src="https://via.placeholder.com/30x30" alt="logo footer">
-			</div>
-			<div class="col-12 col-sm-6 social">
-				<a class="fa fa-facebook" href="https://fr-fr.facebook.com/" target="_blank"></a>
-				<a class ="fa fa-twitter " href="https://twitter.com/" target="_blank"></a>
-				<a class="fa fa-instagram" href="https://www.instagram.com" target="_blank"></a>
+		<div class="container-fluid container-newsfeed">
+			<div class="row" id="feed1">
+				<div class="row">
+					<div class="col-md-10 offset-md-1 col-8 offset-2 feedImg">
+						<img src="https://via.placeholder.com/1920x500" alt="">
+						<h3>Titre de l'article</h3>
+						<p><span class="italic">créé le 02/09/2018</span></p>
+					</div>
+				</div>
+				<div class="row newsText">
+					<div class="col-md-3 offset-md-1 col-8 offset-2 infos">
+						<ul>
+							<li><span class="bold">Adresse : </span><a href="#">1 avenue Bois </a></li>
+							<li><span class="bold">Tarif : </span>Gratuit</li>
+							<li><span class="bold">Categorie : </span> Art - Découverte</li>
+						</ul>
+					</div>
+					<div class="col-md-7 offset-md-0 col-8 offset-2 review">
+						<p>Kevin pork loin ground round t-bone shankle chicken. Short loin tongue ham beef ribs sirloin burgdoggen short ribs, beef doner strip steak bacon. Tail spare ribs turducken boudin sausage biltong. Leberkas salami bacon shankle, cupim ribeye jerky meatball.</p>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col text-center">
-				<p class="copyrights"><span>Copyrights 2018 - Wild Code School - Clemence, Christelle & Julie</span></p>
-			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- ************************************* Modulo About Me *********************************** -->
+
+		<div class="modal fade" id="modalAboutme" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    		<div class="modal-dialog modal-dialog-centered" role="document">
+    			<div class="modal-content">
+			    	<div class="modal-header">
+			        	<h5 class="modal-title" id="exampleModalLongTitle">Qui Suis-je ?</h5>
+			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			        	<span aria-hidden="true">&times;</span>
+			        	</button>
+			    	</div>
+        			<div class="modal-body">
+        				<img src="https://via.placeholder.com/60x60" alt="Wildo portrait">
+        				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore praesentium perspiciatis enim vero voluptatum quas repudiandae blanditiis sint nostrum culpa, est, sed numquam odio itaque molestiae voluptatem! Voluptas, doloribus, amet?</p>
+      				</div>
+
+    			</div>
+    		</div>
 		</div>
-	</footer>
 
 
+		<!-- ************************************* Modulo Contact Me *********************************** -->
 
+		<div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		    <div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+			    	<div class="modal-header">
+			        	<h5 class="modal-title" id="exampleModalLabel">Nous Contacter</h5>
+			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          		<span aria-hidden="true">&times;</span>
+			        	</button>
+			        </div>
+		        	<div class="modal-body">
+						<form>
+					  		<div class="form-row">
+					    		<div class="form-group col-md-6">
+					      			<input type="text" class="form-control" id="nom" placeholder="Nom Prénom">
+					    		</div>
+					    		<div class="form-group col-md-6">
+					        		<input type="email" class="form-control" id="email" placeholder="Email">
+					    		</div>
+					    	</div>
+					    	<div class="form-group">
+    							<input type="text" class="form-control" id="Sujet" placeholder="Sujet">
+  							</div>
+					    	<div class="form-group">
+					    		<textarea class="form-control" rows="5" id="comment" placeholder="Votre Message"></textarea>
+					    	</div>
+					  		<div class="form-group">
+					    		<div class="form-check">
+					        		<input class="form-check-input" type="checkbox" id="gridCheck">
+					        		<label class="form-check-label" for="gridCheck">Je ne suis pas un robot </label>
+					    		</div>
+					  		</div>
+					  		<button type="submit" class="btn btn-primary">Envoyer</button>
+						</form>
+		        	</div>
+		    	</div>
+		    </div>
+		</div>
 
+		<!-- ************************************* Footer *********************************** -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+		<footer class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-6 footerLogo">
+					<img src="assets/pictures/logo.png" alt="logo footer">
+				</div>
+				<div class="col-12 col-sm-6 social">
+					<a class="fa fa-facebook facebook" href="https://fr-fr.facebook.com/" target="_blank"></a>
+					<a class ="fa fa-twitter twitter" href="https://twitter.com/" target="_blank"></a>
+					<a class="fa fa-instagram instagram" href="https://www.instagram.com" target="_blank"></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col text-center">
+					<p class="copyrights"><span>Copyrights 2018 - Wild Code School - Clemence, Christelle & Julie</span></p>
+				</div>
+			</div>
+		</footer>
 
 
 
@@ -157,5 +225,7 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
 	</body>
 </html>
