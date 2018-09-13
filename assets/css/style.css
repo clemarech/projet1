@@ -1,5 +1,14 @@
+
+body {
+  overflow-x:hidden;
+}
+
 /** ********************* Header **************** **/
 
+.navbar img {
+  width: 40px;
+  height: auto;
+}
 
 .banner {
   display : grid;
@@ -24,6 +33,28 @@ h1 {
 
 /** ********************* SideMenu **************** **/
 
+.sideMenu {
+  position: fixed; 
+  top: 300px;
+  left: 0;
+  background: #5F5F5F;
+  border-radius: 0 8px 8px 0;
+}
+
+.sideMenu ul {
+  list-style: none;
+  margin: 0 !important;
+    padding: 10px;
+}
+
+.sideMenu a {
+  color: #222;
+}
+
+.sideMenu a:hover {
+  text-decoration: none;
+  color: #fff;
+}
 
 /** ********************* Newsfeed **************** **/
 
@@ -51,12 +82,23 @@ h1 {
   left: 24px;
   font-size: 1.7vw;
 }
+.newsText {
+  padding: 15px;
+}
 
-#news1 ul li{
+.newsText ul li{
   list-style: none;
 }
+.newsText ul {
+  padding: 0;
+}
+.infos {
+  align-self: center;
+}
+
 .review {
   text-align: justify;
+  align-self: center;
 }
 
 .italic {
@@ -80,15 +122,59 @@ footer {
 .footerLogo {
   display: none;
 }
+.footerLogo img {
+  width: 40px;
+  height: auto;
+}
 
 .social {
   text-align: center;
 }
 
+
+
+.facebook {
+    background-color: #3b5998;
+    padding: 5px 9px;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 9px;
+}
+
+.twitter {
+    background-color: #00aced;
+    padding: 5px;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 9px;
+}
+
+.instagram {
+    background-color: #cd486b;
+    padding: 6px;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 9px;
+}
+
+.facebook:hover, .twitter:hover, .instagram:hover {
+  text-decoration: none;
+  color: #fff6e4;
+  animation: liens 0.5s;
+}
+
 .copyrights {
-  font-size: 2vw;
+  font-size: 1.5vw;
   padding: 10px 0 0;
   margin-bottom: 0;
+}
+
+
+
+@keyframes liens {
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 @media (min-width: 576px) {
