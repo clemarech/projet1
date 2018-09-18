@@ -153,6 +153,35 @@ h1 {
 
 /** ********************* Modulo Contact Me **************** **/
 
+.modal-title {
+  width: 100%;
+  text-align: center;
+}
+
+#ContactSubmitContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.centered {
+  width: 100px;
+  font-size: 14px;
+}
+
+.btn-css {
+  background-color: #f3f3f3;
+  border: #E7E7E7 1px solid;
+  color: #797171;
+}
+.btn-css:hover {
+  background-color: #F6F6F6;
+  border: #C5C5C5 2px solid;
+  color: #272727;
+  margin-bottom: -2px;
+}
+
+
 /** ********************* Footer **************** **/
 footer {
   padding: 10px 0;
@@ -225,9 +254,17 @@ footer {
     text-align: right;
   }
 
+<<<<<<< HEAD
   .copyrights {
     font-size: 14px;
     padding: 0;
 }
+=======
+  /** *** Modulo Contact Me *** **/
+  .centered {
+    width: 200px;
+    font-size: 18px;
+  }
+>>>>>>> contact
 
 }

@@ -166,34 +166,37 @@
 		    <div class="modal-dialog" role="document">
 		    	<div class="modal-content">
 			    	<div class="modal-header">
-			        	<h5 class="modal-title" id="exampleModalLabel">Nous Contacter</h5>
+			        	<h5 class="modal-title" id="exampleModalLabel">Me Contacter</h5>
 			        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 			          		<span aria-hidden="true">&times;</span>
 			        	</button>
 			        </div>
 		        	<div class="modal-body">
-						<form>
+						<form onsubmit="subForm()">
 					  		<div class="form-row">
 					    		<div class="form-group col-md-6">
-					      			<input type="text" class="form-control" id="nom" placeholder="Nom Prénom">
+					      			<input type="text" class="form-control testA" id="nom" placeholder="Nom Prénom" required>
 					    		</div>
 					    		<div class="form-group col-md-6">
-					        		<input type="email" class="form-control" id="email" placeholder="Email">
+					        		<input type="email" class="form-control testB" id="email" placeholder="Email" required>
 					    		</div>
 					    	</div>
 					    	<div class="form-group">
     							<input type="text" class="form-control" id="Sujet" placeholder="Sujet">
   							</div>
 					    	<div class="form-group">
-					    		<textarea class="form-control" rows="5" id="comment" placeholder="Votre Message"></textarea>
+					    		<textarea class="form-control" rows="5" id="comment" placeholder="Votre Message" required></textarea>
 					    	</div>
 					  		<div class="form-group">
-					    		<div class="form-check">
-					        		<input class="form-check-input" type="checkbox" id="gridCheck">
+					    		<div class="form-check text-center">
+					        		<input class="form-check-input" type="checkbox" id="gridCheck" required>
 					        		<label class="form-check-label" for="gridCheck">Je ne suis pas un robot </label>
 					    		</div>
-					  		</div>
-					  		<button type="submit" class="btn btn-primary">Envoyer</button>
+							</div>
+							<div id=ContactSubmitContainer>
+								<button type="submit" id='subBtn' class="btn btn-css centered">Envoyer</button>
+							</div>
+
 						</form>
 		        	</div>
 		    	</div>
@@ -228,6 +231,11 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+		<!-- ************** Link JS ************** -->
+
+		<script src="assets/js/main.js"></script>
 
 
 	</body>
