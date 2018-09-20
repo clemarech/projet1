@@ -8,6 +8,7 @@
 6- Footer
 7- MediaQueries && Animations
 8- JS specials
+9- Leaflet API (map)
 */
 
 
@@ -23,11 +24,20 @@ header {
 }
 
 nav {
+  background-color: none;
+}
+
+.navbar-toggler {
+  background-color: #ffffffed;
+  padding: 2px ;
+}
+
+.nav-item {
   background-color: #ffffffed;
 }
+
 .navbar img {
-  width: 45px;
-  height: auto;
+  display: none;
 }
 
 .nav-link {
@@ -70,7 +80,7 @@ h1 {
 
 .sideMenu {
   position: fixed; 
-  top: 300px;
+  top: 200px;
   left: 0;
   background: #f2f2f2;
   border-radius: 0 5px 5px 0;
@@ -81,12 +91,12 @@ h1 {
 .sideMenu ul {
   list-style: none;
   margin: 0 !important;
-  padding: 10px;
+  padding: 7px;
 }
 
 .sideMenu a {
   color: #222;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 #food-menu a:hover {
@@ -258,6 +268,7 @@ h1 {
 }
 .modal-header {
   border-bottom: 1px solid #09a38ccc;
+  margin-bottom: 5px;
 }
 
 /** ********************* 5- Modulo Contact Me **************** **/
@@ -365,7 +376,48 @@ footer {
   }
 }
 
+@media (orientation: landscape) {
+
+  .sideMenu {
+    top: 40%;
+  }
+}
+
+@media (min-width: 540px) {
+
+  /* .sideMenu {
+    top: 300px;
+  } */
+
+  .sideMenu ul {
+    padding: 10px;
+  }
+
+  .sideMenu a {
+    font-size: 1.5em;
+  }
+}
+
 @media (min-width: 576px) {
+  
+  nav {
+    background-color: #ffffffed;
+  }
+  
+  .navbar-toggler {
+    background-color: none;
+
+  }
+
+  .nav-item {
+    background-color: #ffffff00;
+  }
+
+  .navbar img {
+    width: 45px;
+    height: auto;
+    display: inline-block;
+  }
 
   .footerLogo {
     display: block;
@@ -393,4 +445,12 @@ footer {
 
   .jsToggleReversed {
     display: none;
+  }
+
+  /************************** 9- Leaflet API (map) *****************************/
+  
+  #mapid {
+    height: 465px;
+    width: 90%;
+    margin: 0 auto 5px;
   }
